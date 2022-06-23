@@ -101,5 +101,8 @@ opacity: 1;
         width: 80%;
         height: 40vw;
     }
+    button{
+        height: 4rem;
+    }
     
 }
