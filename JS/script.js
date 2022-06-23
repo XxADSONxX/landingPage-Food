@@ -1,16 +1,21 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+let time = 3000,
+    currentImageIndex = 0,
+    images = document.querySelectorAll(".slider img")
+max = images.length;
 
-setInterval( function(){
-    nextImage();
-}, 2000)
+function nextImage() {
+images[currentImageIndex].classList.remove("selected")
+currentImageIndex++
 
-function nextImage(){
-    count++;
-    if(count>6){
-        count = 1;
-    }
-    document.getElementById("radio"+count).checked = true;
+if(currentImageIndex >=max)
+currentImageIndex = 0;
+images[currentImageIndex].classList.add("selected")
 }
-let text = 40;
-console.log(text)
+
+function start() {
+    setInterval(() => {
+        /* troca de imagens */
+        nextImage()
+    }, time)
+}
+window.addEventListener("load", start)
