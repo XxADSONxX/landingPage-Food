@@ -8,7 +8,7 @@
 body {
     font-size: 62.5%;
     background-color: #101010;
-    font-family: 'League Gothic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
 
 }
@@ -16,8 +16,9 @@ body {
 header h1 {
     color: #Fff;
     text-align: center;
-    font-size: 3rem;
-    margin-top: 5rem;
+    font-size: 4rem;
+    position: relative;
+    margin-top: 1rem;
 }
 
 .texto {
@@ -30,7 +31,7 @@ header h1 {
     color: #fff;
     font-weight: 500;
     max-width: 40rem;
-    border: #E62F08 1rem solid;
+    border: #E62F08 0.5rem solid;
     border-radius: 1rem;
     text-align: center;
     font-size: 2.3rem;
@@ -42,7 +43,7 @@ header h1 {
     display: flex;
     justify-content: center;
     background-color: #101010;
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
 }
 
 button {
@@ -51,6 +52,7 @@ button {
     border-radius: 1.5rem;
     padding: 1rem;
     font-size: 2rem;
+    font-weight: 700;
     width: 100%;
     height: 5rem;
     cursor: pointer;
@@ -71,7 +73,7 @@ text-align: center;
     width:80%;
     max-width: 50rem;
     height: 25vW;
-    max-height: 20rem;
+    max-height: 16rem;
     position: relative;
 }
 .slider img{
